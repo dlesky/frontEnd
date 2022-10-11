@@ -1,0 +1,176 @@
+.calc-grid {
+    display: grid;
+    background-color: black;
+    grid-template-areas:
+        "output output output output"
+        "AC plus-minus ampersand divide-op"
+        "seven eight nine multiply-op"
+        "four five six subtract-op"
+        "one two three add-op"
+        "naught naught point equals";
+    row-gap: 1px;
+    column-gap: 1px;
+    height: 450px;
+    width: 340px;
+
+}
+
+.output {
+    grid-area: output;
+    padding: 10px 10px;
+    font-size: 80px;
+    background-color: rgb(60, 60, 70);
+    color: #fff;
+    text-align: right;
+    font-family: 'Helvetica';
+    font-weight: 100;
+}
+
+.button {
+    padding: 15px 15px;
+    font-size: 20px;
+    text-align: center;
+    border-style: hidden;
+
+}
+
+.num:active {
+    background-color: rgb(140, 140, 140);
+}
+
+.op:active {
+    background-color: rgb(200, 141, 100);
+}
+
+.upper:active {
+    background-color: rgb(74, 72, 77);
+}
+
+.upper {
+    background-color: rgb(45, 43, 49);
+
+}
+
+.op {
+    /*here because math operators are orange*/
+    background-color: rgb(253, 141, 14);
+    font-size: 30px;
+    font-family: 'Helvetica';
+}
+
+.num {
+    background-color: rgb(74, 72, 77);
+    font-size: 30px;
+    font-family: 'Helvetica';
+}
+
+.AC {
+    grid-area: AC;
+    color: white;
+    font-size: 35px;
+}
+
+.plus-minus {
+    grid-area: plus-minus;
+    color: white;
+}
+
+.ampersand {
+    grid-area: ampersand;
+    color: white;
+}
+
+.divide-op {
+    grid-area: divide-op;
+    color: white;
+
+}
+
+.seven {
+    grid-area: seven;
+    color: white;
+}
+
+.eight {
+    grid-area: eight;
+    color: white;
+}
+
+.nine {
+    grid-area: nine;
+    color: white;
+}
+
+.multiply-op {
+    grid-area: multiply-op;
+    color: white;
+
+}
+
+.four {
+    grid-area: four;
+    color: white;
+}
+
+.five {
+    grid-area: five;
+    color: white;
+}
+
+.six {
+    grid-area: six;
+    color: white;
+}
+
+.subtract-op {
+    grid-area: subtract-op;
+    color: white;
+
+}
+
+.one {
+    grid-area: one;
+    color: white;
+}
+
+.two {
+    grid-area: two;
+    color: white;
+}
+
+.three {
+    grid-area: three;
+    color: white;
+}
+
+.add-op {
+    grid-area: add-op;
+    color: white;
+
+}
+
+.naught {
+    grid-area: naught;
+    color: white;
+}
+
+.point {
+    grid-area: point;
+    color: white;
+}
+
+.equals {
+    grid-area: equals;
+    color: white;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
